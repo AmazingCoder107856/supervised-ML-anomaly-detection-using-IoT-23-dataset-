@@ -1,4 +1,4 @@
-# Supervised ML - in IOT Network Traffic Analysis
+# Supervised ML for anomaly detection in IOT to enahnce network security
 This project aims to evaluate the effectiveness of supervised machine-learning-based anomaly detection techniques in distinguishing between benign and malicious network traffic in the IoT-23 dataset and to assess the robustness and scalability of different supervised anomaly detection methods in handling the dynamic and heterogeneous nature of IoT network environments.
 
 
@@ -43,7 +43,7 @@ Implemented data processing and transformation tasks:
 9. Encoding categorical features: handling rare values and applying [One-Hot Encoding](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 10. Checking the processed dataset and storing it to a csv file.
 
-### PHASE 3 - Model Training
+### PHASE 3 - Data Training
 > Corresponding notebook:  [model-training.ipynb](https://github.com/AmazingCoder107856/analyze-supervised-based-anomaly-detection-methods-using-IoT-23-dataset/blob/main/notebooks/model-training.ipynb)
 
 Trained and analyzed classification models:
@@ -62,7 +62,7 @@ Evaluation method:
 
 Results were analyzed and compared for each considered model.<br/>
 
-### PHASE 4 - Model Tuning
+### PHASE 4 - Data Tuning
 > Corresponding notebook:  [model-tuning.ipynb](https://github.com/AmazingCoder107856/analyze-supervised-based-anomaly-detection-methods-using-IoT-23-dataset/blob/main/notebooks/4-model-tuning.ipynb)
 
 Model tuning details:
