@@ -3,19 +3,19 @@ This project aims to evaluate the effectiveness of supervised machine-learning-b
 
 
 ## Data Set (Aposemat IoT-23)
-The dataset used in this project is: The lighter version containing only the labeled flows without the pcaps files (8.8 GB) [iot_23_datasets_small](https://mcfp.felk.cvut.cz/publicDatasets/IoT-23-Dataset/iot_23_datasets_small.tar.gz).<br/>
-- It is part of [Aposemat IoT-23 dataset](https://www.stratosphereips.org/datasets-iot23).
+The dataset used in this project is: [iot_23_datasets_small](https://mcfp.felk.cvut.cz/publicDatasets/IoT-23-Dataset/iot_23_datasets_small.tar.gz).<br/>
+- The lighter version containing only the labeled flows without the pcaps files (8.8 GB) [Aposemat IoT-23 dataset](https://www.stratosphereips.org/datasets-iot23).
 - A labeled dataset with malicious and benign IoT network traffic.
 - This dataset was created as part of the Avast AIC laboratory with the funding of Avast Software. 
 
 ## Data Classification Details
 The project is implemented in four distinct steps simulating the essential data processing and analysis phases. <br/>
-- Each step is represented in a corresponding notebook inside [notebooks](notebooks).
-- Intermediary data files are stored inside the [data](data) path.
-- Trained models are stored inside [models](models).
+- Each step is represented in a corresponding Jupyter Notebook inside [IOT-23-dataset-extraction](IOT-23-dataset-extraction).
+- Data files (raw, interim, processed) are stored inside the [CSV-data](CSV-data) path.
+- Trained data models are stored inside [applied-ML-methods](applied-ML-methods).
 
 ### PHASE 1 - Data Cleaning
-> Corresponding notebook:  [iot-23-data-cleaning.ipynb](https://github.com/AmazingCoder107856/analyze-supervised-based-anomaly-detection-methods-using-IoT-23-dataset/blob/main/notebooks/iot-23-data-cleaning.ipynb)
+> Corresponding Jupyter Notebook:  [iot-23-data-cleaning.ipynb](https://github.com/AmazingCoder107856/supervised-ML-anomaly-detection-using-IoT-23-dataset-/blob/main/IOT-23-dataset-extraction/iot-23-data-cleaning.ipynb)
 
 Implemented data exploration and cleaning tasks:
 1. Loading the raw dataset file into pandas DataFrame.
@@ -27,7 +27,7 @@ Implemented data exploration and cleaning tasks:
 7. Storing the cleaned dataset to a csv file.
 
 ### PHASE 2 - Data Processing
-> Corresponding notebook:  [data-preprocessing.ipynb](https://github.com/AmazingCoder107856/analyze-supervised-based-anomaly-detection-methods-using-IoT-23-dataset/blob/main/notebooks/iot-23-data-processed.ipynb)
+> Corresponding Jupyter Notebook:  [iot-23-data-preprocessed.ipynb](https://github.com/AmazingCoder107856/supervised-ML-anomaly-detection-using-IoT-23-dataset-/blob/main/IOT-23-dataset-extraction/iot-23-data-preprocessed.ipynb)
 
 Implemented data processing and transformation tasks:
 1. Loading dataset file into pandas DataFrame.
@@ -44,7 +44,7 @@ Implemented data processing and transformation tasks:
 10. Checking the processed dataset and storing it to a csv file.
 
 ### PHASE 3 - Data Training
-> Corresponding notebook:  [model-training.ipynb](https://github.com/AmazingCoder107856/analyze-supervised-based-anomaly-detection-methods-using-IoT-23-dataset/blob/main/notebooks/model-training.ipynb)
+> Corresponding Jupyter Notebook:  [iot-23-data-training.ipynb](https://github.com/AmazingCoder107856/supervised-ML-anomaly-detection-using-IoT-23-dataset-/blob/main/IOT-23-dataset-extraction/iot-23-data-training.ipynb)
 
 Trained and analyzed classification models:
 1. Naive Bayes: [ComplementNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.ComplementNB.html)
@@ -63,7 +63,7 @@ Evaluation method:
 Results were analyzed and compared for each considered model.<br/>
 
 ### PHASE 4 - Data Tuning
-> Corresponding notebook:  [model-tuning.ipynb](https://github.com/AmazingCoder107856/analyze-supervised-based-anomaly-detection-methods-using-IoT-23-dataset/blob/main/notebooks/4-model-tuning.ipynb)
+> Corresponding Jupyter Notebook:  [iot-23-data-tuning.ipynb](https://github.com/AmazingCoder107856/supervised-ML-anomaly-detection-using-IoT-23-dataset-/blob/main/IOT-23-dataset-extraction/iot-23-data-tuning.ipynb)
 
 Model tuning details:
 - Tuned model: Support Vector Classifier - [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC)
